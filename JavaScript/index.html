@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>javascript</title>
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+//---------------------Unidimensional------------------
+    var arry = ['a', 'b', 'c',
+                'd', 'e', 'f',
+                'g', 'l', 'm'];
+
+    console.time("Test")
+for (var e = 0; e < 10000000; e++) {
+
+for (var i = 0; i < arry.length; i++) {
+  arry[i];
+}
+
+}
+console.timeEnd("Test");
+
+//---------------- Bidimensional-----------------------
+
+var arryB = [['a', 'b', 'c'],
+            ['d', 'e', 'f'],
+            ['g', 'l', 'm']];
+
+console.time("TestB")
+for (var e = 0; e < 10000000; e++) {
+
+for (var i = 0; i < arryB.length; i++) {
+arryB[i];
+for (var f = 0; f < arryB[i].length; f++) {
+  arryB[f];
+}
+}
+
+}
+console.timeEnd("TestB");
+
+
+//-----------------------------------
+
+var x=1;
+var y=2;
+
+var Ancho=2;
+
+console.log(arryB[x][y]);
+
+console.log(arry [x+y*Ancho]);
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
