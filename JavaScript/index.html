@@ -43,8 +43,10 @@ for (var f = 0; f < arryB[i].length; f++) {
 }
 console.timeEnd("TestB");
 
-
-//-----------------------------------
+//--Es mas rapido recorer el array unidimensional sobre todo si queremos actualizar los datos miles de veces por segundo 
+//--Tambien es verdad que usamos un for no un foreach
+      
+//---Podemos tratar los dos arrays igual.
 
 var x=1;
 var y=2;
@@ -52,6 +54,8 @@ var y=2;
 var Ancho=2;
 
 console.log(arryB[x][y]);
+
+      //tratamos al array unidimensional como una matriz y nos da el mismo resultado que el array bidimensional.
 
 console.log(arry [x+y*Ancho]);
 
