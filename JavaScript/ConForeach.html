@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>javascript</title>
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+//---------------------Unidimensional------------------
+      //--------|---Ancho----|----------------
+    var arry = ['a', 'b', 'c',
+                'd', 'e', 'f',
+                'g', 'l', 'm'];
+    console.time("Test"); //empieza contador
+for (var i = 0; i < 10000000; i++) {
+
+    arry.forEach(function(parte, indice, ElArry) {
+        ElArry[indice] = 0;
+    });
+  };
+      //recorremos el array 10000000 veces.
+
+console.timeEnd("Test");//finaliza contado
+//---------------- Bidimensional-----------------------
+var arryB = [['a', 'b', 'c'],
+            ['d', 'e', 'f'],
+            ['g', 'l', 'm']];
+console.time("TestB");//empieza contador
+for (var i = 0; i < 10000000; i++) {
+
+arryB.forEach(function(elemento) {
+    elemento.forEach(function(parte, indice, ElArry) {
+      ElArry[indice] = 0;
+
+    });
+});
+
+};
+      //recorremos el array 10000000 veces.
+
+console.timeEnd("TestB");//finaliza contador
+//--Es mas rapido recorer el array unidimensional sobre todo si queremos actualizar los datos miles de veces por segundo
+//--Tambien es verdad que usamos un for no un foreach
+
+//---Podemos tratar los dos arrays igual.
+var x=1;
+var y=2;
+var Ancho=2;
+console.log(arryB[x][y]);
+      //tratamos al array unidimensional como una matriz y nos da el mismo resultado que el array bidimensional.
+console.log(arry [x+y*Ancho]);
+
+//By Mattiaa95 With Love ===)))
+    </script>
+
+  </body>
+</html>
