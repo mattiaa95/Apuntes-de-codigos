@@ -14,15 +14,17 @@
                 'd', 'e', 'f',
                 'g', 'l', 'm'];
 
-    console.time("Test")
+    console.time("Test"); //empieza contador
+      
 for (var e = 0; e < 10000000; e++) {
 
 for (var i = 0; i < arry.length; i++) {
   arry[i];
 }
-
 }
-console.timeEnd("Test");
+      //recorremos el array 10000000 veces.
+      
+console.timeEnd("Test");//finaliza contado
 
 //---------------- Bidimensional-----------------------
 
@@ -30,7 +32,8 @@ var arryB = [['a', 'b', 'c'],
             ['d', 'e', 'f'],
             ['g', 'l', 'm']];
 
-console.time("TestB")
+console.time("TestB");//empieza contador
+      
 for (var e = 0; e < 10000000; e++) {
 
 for (var i = 0; i < arryB.length; i++) {
@@ -39,9 +42,10 @@ for (var f = 0; f < arryB[i].length; f++) {
    arryB[i][f];
 }
 }
-
 }
-console.timeEnd("TestB");
+      //recorremos el array 10000000 veces.
+      
+console.timeEnd("TestB");//finaliza contador
 
 //--Es mas rapido recorer el array unidimensional sobre todo si queremos actualizar los datos miles de veces por segundo 
 //--Tambien es verdad que usamos un for no un foreach
