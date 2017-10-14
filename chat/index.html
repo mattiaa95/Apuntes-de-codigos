@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat Tutorial</title>
+  <style media="screen">
+    body {
+      background-color: rgb(213, 213, 213);
+    }
+
+    #message-box {
+      padding: 0;
+      margin: 0;
+      position: fixed;
+      bottom: 0;
+      height: 50px;
+      width: 100%;
+      background-color: rgb(119, 215, 237);
+    }
+
+    #chat-message {
+      height: 100%;
+      width: 80%;
+    }
+
+    p {
+      display: flex;
+      word-wrap: break-word;
+      padding: 1px;
+      width: 65%;
+      margin: 2px;
+      font-family: sans-serif;
+    }
+
+    .a {background-color: rgb(229, 232, 164);}
+    .b {background-color: rgb(231, 156, 188);}
+    .c {background-color: rgb(119, 233, 148);}
+    .d {background-color: rgb(217, 188, 141);}
+    .e {background-color: rgb(124, 148, 78);}
+    .f {background-color: rgb(121, 113, 171);}
+    .g {background-color: rgb(106, 163, 199);}
+  </style>
+</head>
+
+<body>
+
+  <!--Muestra los Textos del Chat-->
+  <div id="chat">
+    <p class="a">Hola</p>
+    <p class="b">Hola</p>
+    <p class="c">Hola</p>
+    <p class="d">Hola</p>
+    <p class="e">Hola</p>
+    <p class="f">Hola</p>
+  </div>
+
+  <!-- Controles del Chat-->
+  <form id="message-box">
+    <input type="text" id="chat-message" autocomplete="off">
+    <input type="submit" value="Enviar">
+  </form>
+
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>
